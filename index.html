@@ -1,8 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
 <body>
+    <div class="section section-1">
+        <form action="" id="form-1">
+            <div class="form-input">
+                <input type="text" required name="full-name" id="full-name" placeholder="Ex. Amar Dahake">
+                <div id="full-name-error"></div>
+            </div>
+            <div class="form-input">
+                <input type="text" required name="email" id="email" placeholder="Ex. example@test.com">
+                <div id="email-error"></div>
+            </div>
+            <div class="phone-wrapper">
+                <div class="icon" id=icon></div>
+                <div class="form-input">
+                    <input required type="text" name="phone" id="phone" placeholder="Ex. (123)-456-7890">
 
-<h1>My First Heading</h1>
-
+                </div>
+            </div>
+            <div id="phone-error"></div>
+            <div id="address"></div>
+            <input type="submit" id="submit" value="Submit">
+            <div id="submit-info"></div>
+        </form>
+    </div>
+    <div class="section section-2">
+        <form id="otpForm" action="http://pixel6.co/">
+            <div class="data">
+                Dear <span id="user">Amar</span><br>
+                Thank you for your inquiry. A 4 digit verification number has been sent to your phone number: <span
+                    id="phone-number"></span>, please enter in the following box and submit for confirmation.
+            </div>
+            <div class="form-input">
+                <input type="number" required name="otp" id="otp" placeholder="Enter otp">
+            </div>
+            <input type="submit" id="otpSubmit" value="Validate">
+        </form>
+    </div>
+    <script src="js/index.js"></script>
 </body>
+
 </html>

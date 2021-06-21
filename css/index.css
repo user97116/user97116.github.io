@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.phone-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phone-wrapper #icon {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: none;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.form-input input {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 2px 5px rgb(173, 173, 173);
+}
+
+.form-input #full-name-error {
+    color: red;
+    font-size: 14px;
+}
+
+.form-input #email-error {
+    color: red;
+    font-size: 14px;
+}
+
+#phone-error {
+    color: red;
+    font-size: 14px;
+}
+
+#address {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 8px 24px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#submit-info {
+    margin-top: 10px;
+    color: red;
+}
+
+.data {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.section-1 {
+
+    position: absolute;
+}
+
+.section-2 {
+    display: none;
+    position: absolute;
+}
+
+.section-2 form {
+    width: 50%;
+}
