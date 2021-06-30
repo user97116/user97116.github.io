@@ -7,44 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-    <div class="section section-1">
-        <form action="" id="form-1">
-            <div class="form-input">
-                <input type="text" required name="full-name" id="full-name" placeholder="Ex. Amar Dahake">
-                <div id="full-name-error"></div>
-            </div>
-            <div class="form-input">
-                <input type="text" required name="email" id="email" placeholder="Ex. example@test.com">
-                <div id="email-error"></div>
-            </div>
-            <div class="phone-wrapper">
-                <div class="icon" id=icon></div>
-                <div class="form-input">
-                    <input required type="text" name="phone" id="phone" placeholder="Ex. (123)-456-7890">
-
-                </div>
-            </div>
-            <div id="phone-error"></div>
-            <div id="address"></div>
-            <input type="submit" id="submit" value="Submit">
-            <div id="submit-info"></div>
-        </form>
-    </div>
-    <div class="section section-2">
-        <form id="otpForm" action="http://pixel6.co/">
-            <div class="data">
-                Dear <span id="user">Amar</span><br>
-                Thank you for your inquiry. A 4 digit verification number has been sent to your phone number: <span
-                    id="phone-number"></span>, please enter in the following box and submit for confirmation.
-            </div>
-            <div class="form-input">
-                <input type="number" required name="otp" id="otp" placeholder="Enter otp">
-            </div>
-            <input type="submit" id="otpSubmit" value="Validate">
-        </form>
+    <div class="card-grid">
     </div>
     <script src="js/index.js"></script>
 </body>

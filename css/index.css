@@ -1,94 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     margin: 0px;
-    padding: 0px;
-    height: 100vh;
+    padding: 40px;
 }
 
-.section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: white;
+.card {
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgb(241, 237, 237);
+    text-align: center;
+    transition: all .3s;
+    box-shadow: 0px 2px 5px rgba(218, 216, 216, 0);
 }
 
-.phone-wrapper {
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 2px 5px rgb(218, 216, 216);
+}
+
+.card-grid {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
-.phone-wrapper #icon {
-    width: 20px;
-    height: 20px;
-    background-size: cover;
-    display: none;
-    margin-bottom: 10px;
+.card .image {
+    height: 75%;
+    background-color: rgb(238, 238, 238);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.form-input {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-bottom: 10px;
+.card .text {
+    padding: 10px;
 }
 
-.form-input input {
-    padding: 10px 20px;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0px 2px 5px rgb(173, 173, 173);
+@media all and (max-width:1500px) {
+    .card {
+        width: 19%;
+    }
 }
 
-.form-input #full-name-error {
-    color: red;
-    font-size: 14px;
+@media all and (max-width:1200px) {
+    .card {
+        width: 24%;
+    }
 }
 
-.form-input #email-error {
-    color: red;
-    font-size: 14px;
+@media all and (max-width:1100px) {
+    .card {
+        width: 23.9%;
+    }
 }
 
-#phone-error {
-    color: red;
-    font-size: 14px;
+@media all and (max-width:960px) {
+    .card {
+        width: 23.4%;
+    }
 }
 
-#address {
-    margin-bottom: 10px;
+@media all and (max-width:900px) {
+    .card {
+        width: 32%;
+    }
 }
 
-input[type="submit"] {
-    padding: 8px 24px;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
+@media all and (max-width:750px) {
+    .card {
+        width: 48%;
+    }
 }
 
-#submit-info {
-    margin-top: 10px;
-    color: red;
-}
-
-.data {
-    font-size: 12px;
-    margin-bottom: 15px;
-}
-
-.section-1 {
-
-    position: absolute;
-}
-
-.section-2 {
-    display: none;
-    position: absolute;
-}
-
-.section-2 form {
-    width: 50%;
+@media all and (max-width:600px) {
+    .card {
+        width: 100%;
+    }
 }
