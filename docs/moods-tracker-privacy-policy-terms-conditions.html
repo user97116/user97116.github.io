@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)">
+  <title>Terms &amp; Privacy - Moods Tracker</title>
+  <meta name="description" content="Terms and Conditions and Privacy Policy for the Moods Tracker mood journal app.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f3ec;
+      --bg-glow: #efe7d8;
+      --surface: #fffdf9;
+      --ink: #201d18;
+      --muted: #6b6458;
+      --accent: #8a5a2b;
+      --accent-soft: #f1e6d6;
+      --line: #e3dccd;
+      --line-strong: #d3c9b6;
+      --shadow: 0 1px 2px rgba(32, 29, 24, 0.04), 0 12px 32px rgba(32, 29, 24, 0.05);
+      --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+      --font-body: "Plus Jakarta Sans", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121110;
+        --bg-glow: #1c1915;
+        --surface: #1b1916;
+        --ink: #f2eee6;
+        --muted: #a8a094;
+        --accent: #e0b98c;
+        --accent-soft: #2a241c;
+        --line: #2d2923;
+        --line-strong: #3b352d;
+        --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 16px 40px rgba(0, 0, 0, 0.25);
+      }
+    }
+    * { box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(900px 420px at 50% -160px, var(--bg-glow), transparent 70%),
+        var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 16.5px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    ::selection { background: var(--accent-soft); color: var(--ink); }
+    a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    .wrap { width: min(974px, 100% - 44px); margin-inline: auto; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid var(--line);
+      background: var(--bg);
+      background: color-mix(in srgb, var(--bg) 82%, transparent);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+    }
+    .site-header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 64px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+    }
+    .top-nav { display: flex; gap: 6px; }
+    .top-nav a {
+      padding: 7px 14px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 120ms ease, background-color 120ms ease;
+    }
+    .top-nav a:hover { color: var(--ink); background: var(--accent-soft); }
+
+    .hero { padding: 76px 0 44px; }
+    .eyebrow {
+      margin: 0 0 14px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    h1 {
+      margin: 0 0 18px;
+      font-family: var(--font-display);
+      font-size: clamp(2.6rem, 6.2vw, 4rem);
+      font-weight: 600;
+      line-height: 1.02;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+    }
+    .lede {
+      margin: 0 0 20px;
+      max-width: 60ch;
+      font-size: 1.08rem;
+      color: var(--muted);
+    }
+    .meta {
+      margin: 0;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+    .facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 30px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .facts li {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+    .facts li::before {
+      content: "";
+      position: static;
+      flex: none;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 64px;
+      align-items: start;
+      padding-bottom: 80px;
+    }
+    .toc {
+      position: sticky;
+      top: 92px;
+      padding-left: 18px;
+      border-left: 1px solid var(--line-strong);
+    }
+    .toc-title {
+      margin: 0 0 12px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .toc a {
+      display: block;
+      padding: 5px 0;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 120ms ease;
+    }
+    .toc a:hover { color: var(--accent); }
+    .content { max-width: 700px; }
+
+    .doc { scroll-margin-top: 96px; }
+    .doc + .doc {
+      margin-top: 72px;
+      padding-top: 64px;
+      border-top: 1px solid var(--line);
+    }
+    .doc-kicker {
+      margin: 0 0 8px;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .doc-title {
+      margin: 0 0 6px;
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 4vw, 2.5rem);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+    }
+    .doc-meta {
+      margin: 0 0 30px;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+    h3 {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin: 38px 0 10px;
+      font-size: 1.06rem;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: -0.012em;
+    }
+    h3 .num {
+      flex: none;
+      min-width: 1.7em;
+      font-family: var(--font-display);
+      font-size: 0.92rem;
+      font-weight: 500;
+      font-variant-numeric: tabular-nums;
+      color: var(--accent);
+    }
+    p { margin: 0 0 14px; }
+    ul {
+      margin: 0 0 16px;
+      padding-left: 0;
+      list-style: none;
+    }
+    ul li {
+      position: relative;
+      margin-bottom: 8px;
+      padding-left: 20px;
+    }
+    ul li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 0.72em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .callout {
+      margin: 24px 0;
+      padding: 20px 24px;
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--accent);
+      border-radius: 14px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .callout p { color: var(--ink); }
+    .callout p:last-child { margin-bottom: 0; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0 48px;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+    footer .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    footer nav { display: flex; gap: 18px; }
+    footer p { margin: 0; }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+
+    @media (max-width: 860px) {
+      .hero { padding-top: 56px; }
+      .layout { grid-template-columns: 1fr; gap: 20px; }
+      .toc {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0 0 8px;
+        border-left: 0;
+      }
+      .toc-title { display: none; }
+      .toc a {
+        padding: 6px 12px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        font-size: 13px;
+      }
+      .content { max-width: none; }
+      .doc + .doc { margin-top: 56px; padding-top: 48px; }
+    }
+    @media print {
+      body { background: #fff; color: #000; }
+      .site-header, .toc, .facts, footer { display: none; }
+      .layout { display: block; padding: 0; }
+      .doc + .doc { break-before: page; margin: 0; padding: 0; border: 0; }
+      .callout { box-shadow: none; }
+      a { color: #000; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top">
+        Moods Tracker
+      </a>
+      <nav class="top-nav" aria-label="Legal documents">
+        <a href="#terms">Terms</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow">Legal</p>
+      <h1>Terms &amp; Privacy</h1>
+      <p class="lede">Plain-language terms and a privacy policy that matches how Moods Tracker actually works: your journal stays on your device.</p>
+      <p class="meta">Last updated October 30, 2026</p>
+      <ul class="facts">
+        <li>No account required</li>
+        <li>No ads or tracking</li>
+        <li>Stored on your device</li>
+      </ul>
+    </section>
+
+    <div class="layout wrap">
+      <aside class="toc" aria-label="On this page">
+        <p class="toc-title">On this page</p>
+        <a href="#terms">Terms and Conditions</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms-contact">Contact</a>
+      </aside>
+
+      <div class="content">
+        <article class="doc" id="terms">
+          <p class="doc-kicker">Document 01</p>
+          <h2 class="doc-title">Terms and Conditions</h2>
+          <p class="doc-meta">Effective October 30, 2026</p>
+
+          <p>These terms govern your use of the Moods Tracker app ("the app"). By downloading or using the app, you agree to these terms. If you do not agree, please do not use the app.</p>
+
+          <h3><span class="num">01</span>Eligibility</h3>
+          <p>You must be at least 13 years old, or the minimum age required in your country, to use the app. If you are under the age of majority where you live, you should use the app only with the involvement of a parent or guardian.</p>
+
+          <h3><span class="num">02</span>Using Moods Tracker</h3>
+          <p>Moods Tracker is a personal mood journal. You may use the app for your own personal, non-commercial purposes.</p>
+          <p>You are responsible for the entries you create and for keeping backups using the export feature.</p>
+
+          <h3><span class="num">03</span>Not medical advice</h3>
+          <div class="callout">
+            <p>The app and its insights are provided for self-reflection only. They are not medical, psychological, or professional advice and are not a substitute for care from a qualified professional.</p>
+            <p>If you are in crisis or need urgent help, contact your local emergency services or a qualified professional. Always consult a qualified healthcare professional before making medical decisions.</p>
+          </div>
+
+          <h3><span class="num">04</span>Your content</h3>
+          <p>You keep ownership of the entries and notes you create. We do not claim ownership of your journal.</p>
+
+          <h3><span class="num">05</span>Backups and data loss</h3>
+          <p>Your journal is stored locally on your device. Deleting the app, resetting the device, or losing the device can remove your data. You are responsible for exporting backups if you want to keep your history. We are not responsible for data loss resulting from device failure, app removal, or failure to keep a backup.</p>
+
+          <h3><span class="num">06</span>Acceptable use</h3>
+          <p>You agree not to use the app in violation of applicable law or to interfere with the app's normal operation. You may not attempt to extract, resell, or redistribute the app except as permitted by law or by the app store's terms.</p>
+
+          <h3><span class="num">07</span>Availability and changes</h3>
+          <p>The app is provided as-is and without warranties. Features may change, be added, or be removed over time, and uninterrupted or error-free operation is not guaranteed.</p>
+
+          <h3><span class="num">08</span>Disclaimer of warranties</h3>
+          <p>To the maximum extent permitted by law, the app is provided "as is" and "as available", without warranties of any kind, whether express or implied, including implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+
+          <h3><span class="num">09</span>Limitation of liability</h3>
+          <p>To the extent permitted by law, the developer is not liable for indirect, incidental, special, or consequential losses arising from your use of the app or reliance on its insights. Nothing in these terms excludes liability that cannot be excluded under applicable law.</p>
+
+          <h3><span class="num">10</span>Consumer rights</h3>
+          <p>Nothing in these terms limits any mandatory rights you have as a consumer under the laws of your country. If any provision of these terms is found to be unenforceable, the remaining provisions will continue to apply.</p>
+
+          <h3><span class="num">11</span>Changes to these terms</h3>
+          <p>We may update these terms as the app changes. The latest version will always be available in Settings and on this page. Continued use of the app after an update means you accept the revised terms.</p>
+
+          <h3 id="terms-contact"><span class="num">12</span>Contact</h3>
+          <p>Questions about these terms can be sent to <a href="mailto:progressapp@proton.me">progressapp@proton.me</a> or through the developer contact details on the app store listing.</p>
+        </article>
+
+        <article class="doc" id="privacy">
+          <p class="doc-kicker">Document 02</p>
+          <h2 class="doc-title">Privacy Policy</h2>
+          <p class="doc-meta">Effective October 30, 2026</p>
+
+          <p>Moods Tracker ("the app", "we", "us") is a personal mood journal. This policy explains what information the app handles, where it is stored, and the choices you have. The app is designed so that your journal stays on your device.</p>
+
+          <h3><span class="num">01</span>Information we collect</h3>
+          <p>We do not collect personal information from you. The app does not require an account, and we do not operate servers that receive your journal entries.</p>
+          <p>Content you create, such as moods, activities, notes, dates, and settings, is stored locally in the app's storage on your device. It is not transmitted to us.</p>
+
+          <h3><span class="num">02</span>Accounts and tracking</h3>
+          <p>No account is required. The app does not include third-party advertising, behavioral analytics, or tracking SDKs. We do not sell or rent personal information.</p>
+
+          <h3><span class="num">03</span>Exports and sharing</h3>
+          <p>You can export your data as a file. When you export or share, the file leaves the app only because you chose an action in the system save or share dialog. The app or service you send it to handles that file under its own privacy policy.</p>
+
+          <h3><span class="num">04</span>Notifications</h3>
+          <p>Daily reminders are scheduled locally on your device. They are not sent through a server. You can turn reminders off in Settings or in your device settings.</p>
+
+          <h3><span class="num">05</span>Fonts</h3>
+          <p>The app may download typeface assets from Google Fonts so it can display its chosen font. No mood entries or notes are included in those requests. When fonts are downloaded, Google may receive standard technical information such as your IP address and device or browser details as part of serving the request, under <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</p>
+
+          <h3><span class="num">06</span>Third-party services</h3>
+          <ul>
+            <li>Google Fonts, for typeface delivery.</li>
+            <li>Your device's system share and save dialogs, for exports.</li>
+            <li>Apple App Store or Google Play, for app distribution and updates.</li>
+          </ul>
+          <p>These services operate under their own privacy policies. We do not share your journal entries or notes with these services. Any third party that processes data in connection with the app is required to provide protections consistent with this policy and applicable law.</p>
+
+          <h3><span class="num">07</span>Data retention and deletion</h3>
+          <p>Your entries remain on your device until you delete them. You can delete individual entries in the app. Removing the app deletes its local data, so export a backup first if you want to keep your history. Because we do not receive your data, we have no copy to delete on our side.</p>
+
+          <h3><span class="num">08</span>Your rights</h3>
+          <p>You control your data directly in the app. Depending on where you live, you may have rights to access, correct, export, or delete personal information. Because the app stores your journal locally and we do not receive it, you can exercise these rights using the app's own tools (viewing, editing, exporting, and deleting entries) and by uninstalling the app. You can withdraw consent at any time by deleting your entries or uninstalling the app.</p>
+
+          <h3><span class="num">09</span>Children's privacy</h3>
+          <p>The app is not directed to children under 13 (or the minimum age required in your country). We do not knowingly collect personal information from children. If you believe a child has used the app, remember that any content they created stays on the device and can be removed by deleting entries or uninstalling the app.</p>
+
+          <h3><span class="num">10</span>Security</h3>
+          <p>Your journal is stored in the app's sandboxed storage on your device. We recommend protecting your device with a passcode and keeping your operating system up to date. No method of storage is completely secure, and we cannot guarantee absolute security.</p>
+
+          <h3><span class="num">11</span>Changes to this policy</h3>
+          <p>We may update this policy as the app changes. The latest version will always be available in Settings and on this page. If a change is material, we will update the date above.</p>
+
+          <h3><span class="num">12</span>Contact</h3>
+          <p>Questions about this policy can be sent to <a href="mailto:progressapp@proton.me">progressapp@proton.me</a> or through the developer contact details on the app store listing.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2026 Moods Tracker</p>
+      <nav aria-label="Footer">
+        <a href="#terms">Terms</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#top">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
