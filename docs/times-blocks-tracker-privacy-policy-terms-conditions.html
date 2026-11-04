@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d0e12" media="(prefers-color-scheme: dark)">
+  <title>Terms &amp; Privacy Policy — Times: Time Blocking Planner</title>
+  <meta name="description" content="Terms and Conditions and Privacy Policy for Times, the private, offline daily time blocking planner for iOS and Android.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f8fafc;
+      --bg-glow: #eef2f6;
+      --surface: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --muted-light: #64748b;
+      --accent: #c7432f;
+      --accent-hover: #a83627;
+      --accent-soft: #fdece9;
+      --line: #e2e8f0;
+      --line-strong: #cbd5e1;
+      --shadow: 0 1px 3px rgba(15, 23, 42, 0.05), 0 16px 36px rgba(15, 23, 42, 0.06);
+      --font-display: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-body: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d0e12;
+        --bg-glow: #161820;
+        --surface: #15171e;
+        --ink: #f8fafc;
+        --muted: #94a3b8;
+        --muted-light: #64748b;
+        --accent: #f87171;
+        --accent-hover: #ef4444;
+        --accent-soft: #2a1515;
+        --line: #222634;
+        --line-strong: #333a4d;
+        --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 18px 42px rgba(0, 0, 0, 0.35);
+      }
+    }
+    * { box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1000px 480px at 50% -180px, var(--bg-glow), transparent 75%),
+        var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-size: 16.5px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    ::selection { background: var(--accent-soft); color: var(--ink); }
+    a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    .wrap { width: min(1000px, 100% - 44px); margin-inline: auto; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid var(--line);
+      background: var(--bg);
+      background: color-mix(in srgb, var(--bg) 85%, transparent);
+      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(16px);
+    }
+    .site-header .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 64px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--ink);
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .top-nav { display: flex; gap: 8px; }
+    .top-nav a {
+      padding: 7px 16px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 140ms ease, background-color 140ms ease;
+    }
+    .top-nav a:hover { color: var(--ink); background: var(--accent-soft); }
+
+    .hero { padding: 72px 0 44px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin: 0 0 14px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    h1 {
+      margin: 0 0 18px;
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5.5vw, 3.6rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+    }
+    .lede {
+      margin: 0 0 20px;
+      max-width: 62ch;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+    .meta {
+      margin: 0;
+      font-size: 13.5px;
+      color: var(--muted-light);
+    }
+    .facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .facts li {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+    .facts li::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 64px;
+      align-items: start;
+      padding-bottom: 96px;
+    }
+    .toc {
+      position: sticky;
+      top: 92px;
+      padding-left: 18px;
+      border-left: 2px solid var(--line);
+    }
+    .toc-title {
+      margin: 0 0 12px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted-light);
+    }
+    .toc a {
+      display: block;
+      padding: 6px 0;
+      color: var(--muted);
+      font-size: 13.5px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 120ms ease;
+    }
+    .toc a:hover { color: var(--accent); }
+    .content { max-width: 720px; }
+
+    .doc { scroll-margin-top: 96px; }
+    .doc + .doc {
+      margin-top: 80px;
+      padding-top: 72px;
+      border-top: 1px solid var(--line);
+    }
+    .doc-kicker {
+      margin: 0 0 8px;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .doc-title {
+      margin: 0 0 6px;
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.8vw, 2.4rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+    }
+    .doc-meta {
+      margin: 0 0 32px;
+      font-size: 13.5px;
+      color: var(--muted-light);
+    }
+    h3 {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin: 40px 0 10px;
+      font-size: 1.08rem;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: -0.015em;
+    }
+    h3 .num {
+      flex: none;
+      min-width: 1.8em;
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      color: var(--accent);
+    }
+    p { margin: 0 0 14px; }
+    ul {
+      margin: 0 0 18px;
+      padding-left: 0;
+      list-style: none;
+    }
+    ul li {
+      position: relative;
+      margin-bottom: 8px;
+      padding-left: 20px;
+    }
+    ul li::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 0.72em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .callout {
+      margin: 24px 0;
+      padding: 20px 24px;
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      border-radius: 14px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+    .callout p { color: var(--ink); }
+    .callout p:last-child { margin-bottom: 0; }
+
+    .permission-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0 24px;
+      font-size: 14px;
+    }
+    .permission-table th,
+    .permission-table td {
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+    }
+    .permission-table th {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted-light);
+      background: var(--surface);
+    }
+    .permission-table td code {
+      background: var(--accent-soft);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 32px 0 54px;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+    footer .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    footer nav { display: flex; gap: 20px; }
+    footer p { margin: 0; }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+
+    @media (max-width: 860px) {
+      .hero { padding-top: 52px; }
+      .layout { grid-template-columns: 1fr; gap: 24px; }
+      .toc {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 0 0 12px;
+        border-left: 0;
+      }
+      .toc-title { display: none; }
+      .toc a {
+        padding: 6px 14px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        font-size: 13px;
+      }
+      .content { max-width: none; }
+      .doc + .doc { margin-top: 56px; padding-top: 48px; }
+    }
+    @media print {
+      body { background: #fff; color: #000; }
+      .site-header, .toc, .facts, footer { display: none; }
+      .layout { display: block; padding: 0; }
+      .doc + .doc { break-before: page; margin: 0; padding: 0; border: 0; }
+      .callout { box-shadow: none; }
+      a { color: #000; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#top">
+        <span class="brand-badge">T</span>
+        <span>Times</span>
+      </a>
+      <nav class="top-nav" aria-label="Legal documents">
+        <a href="#terms">Terms</a>
+        <a href="#privacy">Privacy</a>
+        <a href="mailto:progressapp@proton.me">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow">Legal &amp; Transparency</p>
+      <h1>Terms &amp; Privacy Policy</h1>
+      <p class="lede">Clear terms and an uncompromising privacy policy built for Times: your schedule is 100% private, stays on your device, and is never uploaded anywhere.</p>
+      <p class="meta">Last updated: November 2026</p>
+      <ul class="facts">
+        <li>100% Offline &amp; Local</li>
+        <li>No Account Required</li>
+        <li>No Ads or Analytics SDKs</li>
+        <li>Full User Data Control</li>
+      </ul>
+    </section>
+
+    <div class="layout wrap">
+      <aside class="toc" aria-label="Table of contents">
+        <p class="toc-title">Navigation</p>
+        <a href="#terms">Terms &amp; Conditions</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#permissions">Device Permissions</a>
+        <a href="#contact">Contact Support</a>
+      </aside>
+
+      <div class="content">
+        <!-- DOCUMENT 1: TERMS AND CONDITIONS -->
+        <article class="doc" id="terms">
+          <p class="doc-kicker">Document 01</p>
+          <h2 class="doc-title">Terms and Conditions</h2>
+          <p class="doc-meta">Effective November 2026</p>
+
+          <p>These Terms and Conditions ("Terms") govern your use of the Times mobile application ("the App", "Times", "we", "us"), a daily time blocking planner for iOS and Android. By downloading, accessing, or using Times, you agree to be bound by these Terms. If you do not agree, please do not use the App.</p>
+
+          <h3><span class="num">01</span>Eligibility</h3>
+          <p>You must be at least 13 years of age, or the minimum legal age required in your country, to use Times. If you are under the legal age of majority in your jurisdiction, your parent or legal guardian must review and agree to these Terms on your behalf.</p>
+
+          <h3><span class="num">02</span>License to Use the App</h3>
+          <p>We grant you a revocable, non-exclusive, non-transferable, limited personal license to install and use Times on your personal devices solely for your own personal productivity, daily planning, and time-blocking purposes, in accordance with these Terms and the applicable App Store rules.</p>
+          <p>You agree not to reverse engineer, decompile, redistribute, resell, sublicense, or create derivative works of the App, except where expressly permitted by applicable law.</p>
+
+          <h3><span class="num">03</span>Local-First Architecture &amp; Backups</h3>
+          <div class="callout">
+            <p><strong>Your data lives on your device only.</strong> Times operates completely offline without cloud servers or user accounts. All time blocks, activities, tags, presets, and settings are stored locally in the App's sandboxed database.</p>
+            <p>Because Times does not transmit or synchronize your data with external servers, you are responsible for maintaining backups using the built-in database export feature. If you delete the App or lose your device without an exported backup, your local data cannot be recovered by us.</p>
+          </div>
+
+          <h3><span class="num">04</span>Notifications &amp; Reminders</h3>
+          <p>Times provides an optional daily reminder notification to help you plan your schedule. Daily reminders are scheduled strictly on-device using platform system APIs (UNUserNotificationCenter on iOS / AlarmManager on Android). No notification payload, title, or metadata is transmitted over the internet.</p>
+
+          <h3><span class="num">05</span>Intellectual Property</h3>
+          <p>The visual interface, icons, branding, interaction design, software code, and documentation of Times are the exclusive intellectual property of the developer and are protected by applicable intellectual property and copyright laws.</p>
+          <p>You retain 100% ownership of any data, block titles, custom activity names, notes, and tags that you create within the App.</p>
+
+          <h3><span class="num">06</span>Availability &amp; Updates</h3>
+          <p>Times is provided on an "as is" and "as available" basis. We may issue updates, enhancements, bug fixes, or modify features over time to improve stability, design, or compatibility with new operating systems.</p>
+
+          <h3><span class="num">07</span>Disclaimer of Warranties</h3>
+          <p>To the maximum extent permitted by applicable law, Times is provided without warranties of any kind, whether express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We do not warrant that the App will be completely free of errors, bugs, or interruptions.</p>
+
+          <h3><span class="num">08</span>Limitation of Liability</h3>
+          <p>To the maximum extent permitted by law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, use, or productivity arising out of or related to your use of or inability to use the App.</p>
+
+          <h3><span class="num">09</span>Apple App Store Terms</h3>
+          <p>If you downloaded Times from the Apple App Store, you acknowledge that:</p>
+          <ul>
+            <li>These Terms are concluded solely between you and the developer, not Apple Inc.</li>
+            <li>Apple has no obligation whatsoever to furnish maintenance or support services with respect to Times.</li>
+            <li>Apple and Apple's subsidiaries are third-party beneficiaries of these Terms, and upon your acceptance, Apple has the right to enforce these Terms against you.</li>
+          </ul>
+
+          <h3><span class="num">10</span>Modifications to Terms</h3>
+          <p>We may update these Terms periodically. The revised version will always be posted on this page and directly accessible within the App's Settings. Your continued use of Times following an update constitutes agreement to the updated Terms.</p>
+        </article>
+
+        <!-- DOCUMENT 2: PRIVACY POLICY -->
+        <article class="doc" id="privacy">
+          <p class="doc-kicker">Document 02</p>
+          <h2 class="doc-title">Privacy Policy</h2>
+          <p class="doc-meta">Effective November 2026</p>
+
+          <p>Times ("the App", "we", "us") was built on a foundational principle: <strong>your schedule is personal, and your time data belongs entirely to you.</strong> This Privacy Policy outlines our data handling practices.</p>
+
+          <h3><span class="num">01</span>Information We Collect</h3>
+          <p><strong>We collect zero personal information.</strong> Times does not collect, record, process, or transmit any data about you or your device. Specifically:</p>
+          <ul>
+            <li>No name, email address, or phone number is requested or collected.</li>
+            <li>No user account, profile, or login system exists.</li>
+            <li>No analytics SDKs, telemetry, or behavioral tracking tools are integrated.</li>
+            <li>No crash-reporting services that send stack traces off-device are used.</li>
+            <li>No advertising networks or marketing trackers are included.</li>
+            <li>No location data, contact lists, or advertising identifiers (IDFA/GAID) are accessed.</li>
+          </ul>
+
+          <h3><span class="num">02</span>On-Device Storage</h3>
+          <p>Everything you create in Times — daily schedules, time blocks, custom activities, tags, weekly presets, and application settings — is stored exclusively on your device inside the application's sandboxed local container using SQLite (via Drift). No network requests are made during normal use.</p>
+
+          <h3><span class="num">03</span>Backup, Export &amp; Import</h3>
+          <p>Times includes a local database export feature allowing you to preserve or transfer your data. When you tap "Export database", a SQLite database file (<code>.db</code>) is generated in the device's temporary cache and passed to the native system share sheet. You choose where to save or send that file (such as your local Files app or AirDrop). Times never transmits this backup to any external server.</p>
+          <p>Similarly, when importing a database, the file is read directly from the location you select and copied into local application storage.</p>
+
+          <h3><span class="num">04</span>Local Notifications</h3>
+          <p>If you turn on the daily reminder in Settings, the App schedules a local alert through your device's operating system. These alerts run completely offline and require no remote push notification server.</p>
+
+          <h3 id="permissions"><span class="num">05</span>Device Permissions</h3>
+          <p>Times requests only the minimum system permissions necessary to function:</p>
+          <table class="permission-table">
+            <thead>
+              <tr>
+                <th>Platform</th>
+                <th>Permission</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>iOS</td>
+                <td><code>UserNotifications</code></td>
+                <td>Show optional daily reminder notification to plan your day.</td>
+              </tr>
+              <tr>
+                <td>Android</td>
+                <td><code>POST_NOTIFICATIONS</code></td>
+                <td>Show optional daily reminder notification.</td>
+              </tr>
+              <tr>
+                <td>Android</td>
+                <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+                <td>Restore local daily reminder schedule after device reboot.</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3><span class="num">06</span>Third-Party Services &amp; Bundled Assets</h3>
+          <p>Times bundles all required assets (including font files) directly inside the app binary. The App makes no external network calls at runtime to load fonts, styles, or scripts.</p>
+          <p>When downloading or updating Times, you interact with Apple App Store or Google Play Store under their respective privacy policies.</p>
+
+          <h3><span class="num">07</span>Children's Privacy</h3>
+          <p>Because Times does not collect or transmit any data whatsoever, the App is fully compliant with the Children's Online Privacy Protection Act (COPPA), GDPR-K, and applicable global child safety frameworks. We do not knowingly collect personal data from children under 13 or of any age.</p>
+
+          <h3><span class="num">08</span>Data Retention &amp; Deletion Rights</h3>
+          <p>Because all data remains exclusively on your device, you have immediate and permanent control over your data:</p>
+          <ul>
+            <li>You can clear individual days or delete blocks at any time directly in the planner.</li>
+            <li>Uninstalling the App from your device permanently purges all local data and database files.</li>
+            <li>Because we store no copies of your data on servers, there is no remote data for us to retain, disclose, or delete.</li>
+          </ul>
+
+          <h3 id="contact"><span class="num">09</span>Contact &amp; Support</h3>
+          <p>If you have any questions or feedback regarding this Privacy Policy or our Terms, you can contact the developer at:</p>
+          <div class="callout">
+            <p><strong>Developer:</strong> Amar</p>
+            <p><strong>App:</strong> Times — Daily Time Blocking Planner</p>
+            <p><strong>Email:</strong> <a href="mailto:progressapp@proton.me">progressapp@proton.me</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2026 Times. All rights reserved. 100% offline time blocking planner.</p>
+      <nav aria-label="Footer Navigation">
+        <a href="#terms">Terms</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#top">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
